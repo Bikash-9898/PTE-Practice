@@ -1,0 +1,332 @@
+// Unofficial practice mock tests for PTE Master demo
+
+export const mockTests = [
+  {
+    id: "mt-1",
+    title: "Full Practice Test A",
+    description:
+      "A complete unofficial practice test covering Speaking, Writing, Reading, and Listening with timed sections.",
+    duration: 90,
+    difficulty: "Medium",
+    totalQuestions: 20,
+    sections: ["Speaking", "Writing", "Reading", "Listening"],
+    attempts: 1284,
+    avgScore: 72,
+    featured: true,
+    status: "published",
+  },
+  {
+    id: "mt-2",
+    title: "Full Practice Test B",
+    description:
+      "Another full-length unofficial practice set with a different mix of question types and difficulty.",
+    duration: 90,
+    difficulty: "Hard",
+    totalQuestions: 22,
+    sections: ["Speaking", "Writing", "Reading", "Listening"],
+    attempts: 856,
+    avgScore: 68,
+    featured: true,
+    status: "published",
+  },
+  {
+    id: "mt-3",
+    title: "Speaking Focus Test",
+    description: "Concentrated speaking practice with all five major speaking task types.",
+    duration: 30,
+    difficulty: "Medium",
+    totalQuestions: 10,
+    sections: ["Speaking"],
+    attempts: 2103,
+    avgScore: 74,
+    featured: false,
+    status: "published",
+  },
+  {
+    id: "mt-4",
+    title: "Reading & Writing Combo",
+    description: "Targeted practice for reading comprehension and academic writing tasks.",
+    duration: 45,
+    difficulty: "Easy",
+    totalQuestions: 12,
+    sections: ["Reading", "Writing"],
+    attempts: 967,
+    avgScore: 78,
+    featured: false,
+    status: "published",
+  },
+  {
+    id: "mt-5",
+    title: "Listening Intensive",
+    description: "Focused listening tasks including dictation, fill-in-the-blanks, and summaries.",
+    duration: 35,
+    difficulty: "Hard",
+    totalQuestions: 10,
+    sections: ["Listening"],
+    attempts: 654,
+    avgScore: 65,
+    featured: false,
+    status: "published",
+  },
+  {
+    id: "mt-6",
+    title: "Quick Skills Check",
+    description: "A short diagnostic across all four skills to identify strengths and weak areas.",
+    duration: 25,
+    difficulty: "Easy",
+    totalQuestions: 8,
+    sections: ["Speaking", "Writing", "Reading", "Listening"],
+    attempts: 3421,
+    avgScore: 70,
+    featured: true,
+    status: "published",
+  },
+];
+
+export const mockTestQuestions = {
+  "mt-1": [
+    {
+      id: "mt1-q1",
+      section: "Speaking",
+      type: "Read Aloud",
+      prompt:
+        "Renewable energy sources such as solar and wind power are becoming increasingly affordable and efficient worldwide.",
+      timeLimit: 40,
+    },
+    {
+      id: "mt1-q2",
+      section: "Speaking",
+      type: "Answer Short Question",
+      prompt: "What is the capital city of France?",
+      sampleAnswer: "Paris",
+      timeLimit: 10,
+    },
+    {
+      id: "mt1-q3",
+      section: "Writing",
+      type: "Write Essay",
+      prompt:
+        "Do the advantages of social media outweigh the disadvantages? Discuss both sides and give your opinion. Write 200–300 words.",
+      timeLimit: 1200,
+      wordMin: 200,
+      wordMax: 300,
+    },
+    {
+      id: "mt1-q4",
+      section: "Reading",
+      type: "Multiple Choice",
+      multiSelect: false,
+      passage:
+        "Coral reefs support approximately twenty-five percent of all marine species despite covering less than one percent of the ocean floor. Rising sea temperatures and ocean acidification threaten reef ecosystems globally.",
+      question: "According to the passage, coral reefs:",
+      options: [
+        "Cover most of the ocean floor",
+        "Support about 25% of marine species while covering little ocean area",
+        "Are unaffected by temperature changes",
+        "Only exist in cold waters",
+      ],
+      answer: 1,
+      timeLimit: 120,
+    },
+    {
+      id: "mt1-q5",
+      section: "Reading",
+      type: "Fill in the Blanks",
+      passage: "Effective time management requires setting clear __1__ and prioritizing tasks. Many successful people use a daily __2__ to organize their activities.",
+      wordBank: ["goals", "schedule", "random", "noise"],
+      answers: { 1: "goals", 2: "schedule" },
+      timeLimit: 120,
+    },
+    {
+      id: "mt1-q6",
+      section: "Listening",
+      type: "Write from Dictation",
+      audioText: "The results will be published in next month's journal.",
+      sampleAnswer: "The results will be published in next month's journal.",
+      timeLimit: 60,
+    },
+    {
+      id: "mt1-q7",
+      section: "Listening",
+      type: "Multiple Choice",
+      multiSelect: false,
+      audioText:
+        "Attention passengers: the two-thirty train to Manchester has been delayed by fifteen minutes due to signal failure. We apologize for the inconvenience.",
+      question: "How long is the delay?",
+      options: ["5 minutes", "10 minutes", "15 minutes", "30 minutes"],
+      answer: 2,
+      timeLimit: 60,
+    },
+    {
+      id: "mt1-q8",
+      section: "Writing",
+      type: "Summarize Written Text",
+      prompt:
+        "Exercise has numerous benefits for both body and mind. Regular physical activity strengthens the cardiovascular system, builds muscle, and helps maintain a healthy weight. Mentally, exercise reduces stress hormones and stimulates the release of endorphins, which improve mood. Even moderate activities such as brisk walking for thirty minutes a day can produce measurable health improvements over time.",
+      timeLimit: 600,
+      wordMin: 5,
+      wordMax: 75,
+    },
+  ],
+  "mt-2": [
+    {
+      id: "mt2-q1",
+      section: "Speaking",
+      type: "Read Aloud",
+      prompt:
+        "Globalization has interconnected economies, cultures, and populations through cross-border trade, technology, and migration patterns.",
+      timeLimit: 40,
+    },
+    {
+      id: "mt2-q2",
+      section: "Reading",
+      type: "Multiple Choice",
+      multiSelect: false,
+      passage:
+        "The printing press, invented in the fifteenth century, revolutionized the spread of knowledge by making books affordable and widely available.",
+      question: "What was a major effect of the printing press?",
+      options: [
+        "It made books rarer",
+        "It limited education to the elite",
+        "It made knowledge more widely accessible",
+        "It ended written communication",
+      ],
+      answer: 2,
+      timeLimit: 90,
+    },
+    {
+      id: "mt2-q3",
+      section: "Listening",
+      type: "Write from Dictation",
+      audioText: "All participants must register before the deadline.",
+      sampleAnswer: "All participants must register before the deadline.",
+      timeLimit: 60,
+    },
+    {
+      id: "mt2-q4",
+      section: "Writing",
+      type: "Write Essay",
+      prompt:
+        "Some people think university education should be free for everyone. Others believe students should pay. Discuss both views and give your opinion.",
+      timeLimit: 1200,
+      wordMin: 200,
+      wordMax: 300,
+    },
+  ],
+  "mt-3": [
+    {
+      id: "mt3-q1",
+      section: "Speaking",
+      type: "Read Aloud",
+      prompt: "Scientific research requires careful methodology, accurate data collection, and transparent reporting of results.",
+      timeLimit: 40,
+    },
+    {
+      id: "mt3-q2",
+      section: "Speaking",
+      type: "Answer Short Question",
+      prompt: "What instrument is used to measure temperature?",
+      sampleAnswer: "A thermometer",
+      timeLimit: 10,
+    },
+    {
+      id: "mt3-q3",
+      section: "Speaking",
+      type: "Repeat Sentence",
+      prompt: "The assignment must be completed by Friday afternoon.",
+      timeLimit: 15,
+    },
+  ],
+  "mt-4": [
+    {
+      id: "mt4-q1",
+      section: "Reading",
+      type: "Multiple Choice",
+      multiSelect: false,
+      passage: "Bees play a crucial role in pollinating crops. Without them, many fruits and vegetables would be far less abundant.",
+      question: "What is the main role of bees mentioned?",
+      options: ["Producing honey only", "Pollinating crops", "Building hives", "Controlling pests"],
+      answer: 1,
+      timeLimit: 90,
+    },
+    {
+      id: "mt4-q2",
+      section: "Writing",
+      type: "Summarize Written Text",
+      prompt:
+        "Public libraries remain important community resources. They provide free access to books, internet, and educational programs for people of all ages and backgrounds. In an era of digital information, libraries have adapted by offering e-books, online databases, and digital literacy workshops while still serving as quiet spaces for study and community gatherings.",
+      timeLimit: 600,
+      wordMin: 5,
+      wordMax: 75,
+    },
+  ],
+  "mt-5": [
+    {
+      id: "mt5-q1",
+      section: "Listening",
+      type: "Write from Dictation",
+      audioText: "Please ensure all windows are closed before leaving.",
+      sampleAnswer: "Please ensure all windows are closed before leaving.",
+      timeLimit: 60,
+    },
+    {
+      id: "mt5-q2",
+      section: "Listening",
+      type: "Multiple Choice",
+      multiSelect: false,
+      audioText:
+        "The workshop on academic writing will be held in Room 204 on Thursday at 3 PM. Bring your laptop and a draft of your essay.",
+      question: "Where is the workshop?",
+      options: ["Room 102", "Room 204", "Main hall", "Library"],
+      answer: 1,
+      timeLimit: 60,
+    },
+  ],
+  "mt-6": [
+    {
+      id: "mt6-q1",
+      section: "Speaking",
+      type: "Answer Short Question",
+      prompt: "What do bees produce?",
+      sampleAnswer: "Honey",
+      timeLimit: 10,
+    },
+    {
+      id: "mt6-q2",
+      section: "Reading",
+      type: "Multiple Choice",
+      multiSelect: false,
+      passage: "Water boils at 100 degrees Celsius at standard atmospheric pressure.",
+      question: "At what temperature does water boil (standard pressure)?",
+      options: ["0°C", "50°C", "100°C", "212°C"],
+      answer: 2,
+      timeLimit: 60,
+    },
+    {
+      id: "mt6-q3",
+      section: "Listening",
+      type: "Write from Dictation",
+      audioText: "Remember to save your work frequently.",
+      sampleAnswer: "Remember to save your work frequently.",
+      timeLimit: 45,
+    },
+    {
+      id: "mt6-q4",
+      section: "Writing",
+      type: "Summarize Written Text",
+      prompt:
+        "Recycling helps conserve natural resources and reduce landfill waste. When materials like paper, glass, and metal are recycled, less energy is needed compared to producing new materials from raw resources. Community recycling programs have grown significantly over the past two decades.",
+      timeLimit: 480,
+      wordMin: 5,
+      wordMax: 75,
+    },
+  ],
+};
+
+export function getMockTestById(id) {
+  return mockTests.find((t) => t.id === id);
+}
+
+export function getMockTestQuestions(id) {
+  return mockTestQuestions[id] || mockTestQuestions["mt-1"];
+}
